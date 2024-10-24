@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include<stdlib.h>
 #define MAX 6
 int stack[MAX], ele, num, top = -1;
 void push(int);
@@ -10,7 +11,6 @@ int main()
  int ch;
  while (1)
  {
-DSA Lab Manual_________________________________________________________
  printf("\n1.Push \n2.Pop \n3.Stack Status \n4.Display\n 5.Exit \n Enter
 Your choice: ");
  scanf("%d", &ch);
@@ -43,7 +43,6 @@ void push(int ele)
  printf("\n Stack is Overflow...\n");
  }
  else
-DSA Lab Manual_________________________________________________________
  {
  stack[++top] = ele; // Increment top and push element to stack
  }
@@ -74,7 +73,6 @@ void display()
  {
  printf("Stack is empty!\n");
  }
-DSA Lab Manual_________________________________________________________
  else
  {
  printf("Stack eles are \n");
